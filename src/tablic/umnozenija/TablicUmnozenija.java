@@ -10,8 +10,7 @@ public static final String ANSI_RED = "\u001B[31m";
 public static final String ANSI_GREEN = "\u001B[32m";
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("*ПРОГРАММА-ТЕСТ ДЛЯ ПРОВЕРКИ ЗНАНИЯ ТАБЛИЦЫ УНОЖЕНИЯ*");
-        System.out.println("------------------------------------------------------");
+        System.out.println("ПРОГРАММА ДЛЯ ПРОВЕРКИ ЗНАНИЯ ТАБЛИЦЫ УНОЖЕНИЯ");
         int max=10, min=1, attempt=0;
         Random random = new Random();
         for(int i=0;i<5;i++){
@@ -21,10 +20,10 @@ public static final String ANSI_GREEN = "\u001B[32m";
             System.out.printf("%d*%d=",testNum1,testNum2);
             int answer= scanner.nextInt();
             if(answer==example){
-                System.out.println(ANSI_GREEN + "*ПРАВИЛЬНО*" + ANSI_RESET);
+                System.out.println(ANSI_GREEN + "True" + ANSI_RESET);
                 attempt++;
             }else{
-                System.out.println(ANSI_RED + "*ОШИБКА*" + ANSI_RESET);
+                System.out.println(ANSI_RED + "False" + ANSI_RESET);
                 
             }
                
@@ -36,7 +35,7 @@ public static final String ANSI_GREEN = "\u001B[32m";
                 System.out.println("Молодец!");
                 break;
             case 4: case 3:
-                System.out.println("Надо бы еще поучить!");
+                System.out.println("Надо еще поучить!");
                 break;
             default:
                 System.out.println("Срочно нужно учить таблицу умножения!");
